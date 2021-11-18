@@ -10,6 +10,7 @@ namespace HttpClientRepository
 {
     public class HttpClientRepository<T>
     {
+        //HttpClient
         private HttpClient client { get; }
         public string BaseUrl { get; set; }
 
