@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HttpClientRepository</name>
+    </assembly>
+    <members>
+        <member name="M:HttpClientRepository.HttpClientRepository`1.#ctor(System.Net.Http.HttpClient)">
+            <summary>
+            Instance oluşturur. Restfull API'lerden veri çekilebilir. Geri dönen veriler JSON formatında olmalıdır.
+            </summary>
+            <param name="_httpClient">HttpClient tipindedir. BaseAddress girilmiş olmalıdır./// </param>
+        </member>
+        <member name="M:HttpClientRepository.HttpClientRepository`1.Post(System.String,`0)">
+            <summary>
+            Bu işlemi yaparken server tarafındaki data tipi fonksiyonu verilir.
+            </summary>
+            <param name="url">endpoint yazılır.</param>
+            <param name="data">T tipinde 1 adet data girilmelidir.</param>
+            <returns></returns>
+        </member>
+        <member name="M:HttpClientRepository.HttpClientRepository`1.Put(System.String,`0)">
+            <summary>
+            Bu işlemi yaparken server tarafındaki data tipi fonksiyonu verilir.
+            </summary>
+            <param name="url">endpoint yazılır.</param>
+            <param name="data">T tipinde 1 adet data girilmelidir.</param>
+            <returns></returns>
+        </member>
+        <member name="M:HttpClientRepository.HttpClientRepository`1.Delete(System.String,System.Int32)">
+            <summary>
+            Bu işlemi yaparken server tarafındaki data tipi fonksiyonu verilir.
+            </summary>
+            <param name="url">endpoint yazılır.(base url dahil DEĞİL!)</param>
+            <param name="id">Silinecek olan datanın id'si girilmelidir.</param>
+            <returns></returns>
+        </member>
+        <member name="M:HttpClientRepository.HttpClientRepository`1.Get(System.String,System.Int32)">
+            <summary>
+            Sadece 1 tane T tipinde veri döner.
+            </summary>
+            <param name="url">endpoint yazılır.</param>
+            <param name="id">Çağrılan datanın id'si girilmelidir.</param>
+            <returns></returns>
+        </member>
+        <member name="M:HttpClientRepository.HttpClientRepository`1.GetAll(System.String)">
+            <summary>
+            Sadece 1 tane T tipinde veri döner.
+            </summary>
+            <param name="url">endpoint yazılır.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
